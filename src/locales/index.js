@@ -2,8 +2,8 @@ import { createI18n } from 'vue-i18n';
 
 import { getLanguage } from '@/utils/cookies';
 
-import elementEnLocale from 'element-plus/lib/locale/lang/en';
-import elementZhLocale from 'element-plus/lib/locale/lang/zh-cn';
+import elementEnLocale from 'element-plus/es/locale/lang/en';
+import elementZhLocale from 'element-plus/es/locale/lang/zh-cn';
 
 // User defined lang
 import enLocale from './lang/en';
