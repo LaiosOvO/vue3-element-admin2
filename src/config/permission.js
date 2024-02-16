@@ -64,6 +64,7 @@ router.beforeEach(async (to, from, next) => {
       next();
     } else {
       if (recordRoute) {
+        console.log( to.path )
         next(`/login?redirect=${to.path}`);
       } else {
         next('/login');
@@ -71,8 +72,17 @@ router.beforeEach(async (to, from, next) => {
       if (progressBar) NProgress.done();
     }
   }
+
+
+
   document.title = getPageTitle(to.meta.title);
 });
+
+
+
+
 router.afterEach(() => {
   if (progressBar) NProgress.done();
 });
+
+

@@ -11,7 +11,7 @@
     "serve": "cross-env NODE_ENV=development vite",
     "build": "cross-env NODE_ENV=development vite build",
     "preview": "cross-env vite preview",
-    "build:preview": "vite build --mode production && vite preview",
+    "build:preview": "vite build --mode development && vite preview",
     "dev:mock": "cross-env USE_MOCK=true vite",
     "build:mock": "cross-env USE_CHUNK_MOCK=true vite build && vite preview",
     "lint:eslint": "eslint --cache --max-warnings 0  \"{src,mock}/**/*.{vue,ts,tsx}\" --fix",
